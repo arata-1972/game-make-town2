@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-	  databaseURI: databaseUri || 'mongodb://heroku_3c6r6wwl:fv1fmrg7bhf9ad41paju226dlm@ds019254.mlab.com:19254/heroku_3c6r6wwl',
+	  databaseURI: databaseUri || 'mongodb://heroku_d4jw6lrw:u4phmitg51kem72trahjiip9be@ds057386.mlab.com:57386/heroku_d4jw6lrw',
 	  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
 	  appId: process.env.APP_ID || '4WZk4nDjnFKA3Dnzen6m42aMM5OxP3GmvWctBFM8',
 	  masterKey: process.env.MASTER_KEY || 'aZqDm0eOBeulrWusZOdEEQPrfiwqjBaeITvGEceu', //Add your master key here. Keep it secret!
-	  serverURL: process.env.SERVER_URL || 'https://game-make-town.herokuapp.com/parse',  // Don't forget to change to https if needed
+	  serverURL: process.env.SERVER_URL || 'https://game-make-town2.herokuapp.com/parse',  // Don't forget to change to https if needed
 	  liveQuery: {
 	    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
 	  },
